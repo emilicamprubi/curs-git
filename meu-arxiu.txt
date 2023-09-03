@@ -64,3 +64,12 @@ git push origin master (master o main, depèn)
 
 GIT PULL (Rebre canvis fets a Github)
 git pull origin
+
+CREACIÓ d'un projecte a Github
+1-Creem un projecte amb el seu nom
+2-Escollim si treballem amb master o main
+3-Copiem la direcció del projecte (HTTPS)
+4-Obrim una carpeta a local
+5-CLONEM el projecte de Github
+6-Posem els arxius que volem dins la carpeta
+7-Fem un pull i pujaran al Github
