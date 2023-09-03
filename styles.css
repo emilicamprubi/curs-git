@@ -1,0 +1,38 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.meudiv1 {
+  width: 600px;
+  height: 400px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid black;
+  border-radius: 20px;
+  background-color: aqua;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+}
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 20px;
+}
+
+.clasecilla {
+  width: 600px;
+  height: 300px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: lightcoral;
+  align-items: center;
+  justify-content: center;
+}

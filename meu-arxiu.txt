@@ -1,0 +1,66 @@
+git --version (ens diu la versió del git).
+which git (on està ubicada la instal·lació de git)
+
+GIT INIT - GIT STATUS - GIT LOG
+git init (per iniciar git en una ubicació)
+git status (l'estructura del nostre git, si té branques, etc.)
+git log (quins commits s'han fet)(per sortir :q)
+git log --oneline (log no tan extens)
+
+GIT ADD
+git add meu-arxiu.txt (afegim l'arxiu per proposta de commit)
+git add .  (afegeix tot el que estigui modificat o nou del directori)
+git rm --cached meu-arxiu.txt (deixar d'afegir un arxiu)
+
+GIT COMMIT
+git commit -m "Afegir arxiu de texte" (commit amb comentari)
+git config --global core.editor "code --wait" (comentaris amb code)
+git reset --soft HEAD~1 (suprimir l'última operació log ?)
+
+GIT CONFIG
+git config --global user.name "<nom usuari>" (Per tots els projectes)
+git config --global user.email "<nom usuari>" (Per tots els projectes)
+git config --local (el mateix però només al projecte actual)
+git config user.name (retorna el nom de l'usuari)
+git config user.email (retorna l'email de l'usuari)
+
+GIT BRANCH
+git branch (per veure totes les branques locals)
+git branch -a (veure les branques locals i remotes)
+git branch primera-branca (creació d'una branca)
+
+GIT CHECKOUT (Canviar de branca)
+git checkout primera-branca (ens posicionem a la branca)
+git checkout master (tornem a canviar a la branca master)
+git checkout -b segona-branca (crea branca i ens hi posem)
+
+CANVIAR NOM
+git branch -m nom-de-la-branca-nova (canviem el nom de la branca si estem a aquesta branca)
+git branch -m un-altre-arxiu tercera-branca (canviem el nom de la branca)
+
+ESBORRAR BRANCA
+git branch -d tercera-branca (esborrem branca del repositori local)
+
+GIT MERGE (Fusionar branques)
+per fusionar aquesta branca amb la branca master ens posicionem a la branca master
+git merge segona-branca (ens combina la branca amb master)
+
+CONFLICTES: ens surt un avís de conflicte entre versions a fusionar
+Jo he acceptat les dues versions, una a continuació de l'altra.
+Cal fer un commit per acabar.
+git merge --continue (per acabar de combinar)
+ara ja ens podriem petar les branques que ja hem combinat doncs ja no les necessitem més
+
+GIT REMOTE
+git remote (Mostra els repositoris remots)
+git remote -v (Indica si local està apuntant a un remot)
+git remote add origin https://direccio-projecte
+git push -u origin master
+
+GIT CLONE
+
+GIT PUSH (Enviar a servidor remot - Github)
+git push origin master (master o main, depèn)
+
+GIT PULL (Rebre canvis fets a Github)
+git pull origin
